@@ -1,0 +1,430 @@
+{
+  "clientId": "client-001",
+  "clientName": "Empresa Exemplo",
+  "version": "1.0.0",
+  "theme": {
+    "colors": {
+      "primary": "#3366FF",
+      "secondary": "#FF6B35",
+      "accent": "#4ECB71",
+      "background": "#F5F7FA",
+      "text": "#333333",
+      "error": "#E53935",
+      "success": "#43A047",
+      "warning": "#FFC107"
+    },
+    "typography": {
+      "fontFamily": "Roboto, sans-serif",
+      "headings": {
+        "fontFamily": "Montserrat, sans-serif",
+        "h1": {
+          "fontSize": "2.5rem",
+          "fontWeight": 700,
+          "lineHeight": 1.2
+        },
+        "h2": {
+          "fontSize": "2rem",
+          "fontWeight": 600,
+          "lineHeight": 1.3
+        },
+        "h3": {
+          "fontSize": "1.75rem",
+          "fontWeight": 600,
+          "lineHeight": 1.4
+        }
+      },
+      "body": {
+        "fontSize": "1rem",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      }
+    },
+    "spacing": {
+      "base": 8,
+      "small": 4,
+      "medium": 16,
+      "large": 24,
+      "extraLarge": 32
+    },
+    "borderRadius": {
+      "small": 4,
+      "medium": 8,
+      "large": 16,
+      "round": "50%"
+    },
+    "shadows": {
+      "small": "0 2px 4px rgba(0,0,0,0.1)",
+      "medium": "0 4px 8px rgba(0,0,0,0.12)",
+      "large": "0 8px 16px rgba(0,0,0,0.14)"
+    }
+  },
+  "layout": {
+    "header": {
+      "visible": true,
+      "sticky": true,
+      "height": 64,
+      "components": [
+        {
+          "type": "logo",
+          "position": "left",
+          "config": {
+            "src": "/assets/client-001/logo.png",
+            "alt": "Empresa Exemplo Logo",
+            "width": 120
+          }
+        },
+        {
+          "type": "mainNav",
+          "position": "center",
+          "config": {
+            "items": [
+              {
+                "label": "Início",
+                "url": "/",
+                "active": true
+              },
+              {
+                "label": "Produtos",
+                "url": "/produtos"
+              },
+              {
+                "label": "Serviços",
+                "url": "/servicos"
+              },
+              {
+                "label": "Sobre",
+                "url": "/sobre"
+              },
+              {
+                "label": "Contato",
+                "url": "/contato"
+              }
+            ]
+          }
+        },
+        {
+          "type": "searchBar",
+          "position": "right",
+          "config": {
+            "placeholder": "Buscar...",
+            "submitButton": true
+          }
+        }
+      ]
+    },
+    "footer": {
+      "visible": true,
+      "components": [
+        {
+          "type": "footerLinks",
+          "position": "top",
+          "config": {
+            "columns": [
+              {
+                "title": "Produtos",
+                "links": [
+                  {
+                    "label": "Produto A",
+                    "url": "/produtos/a"
+                  },
+                  {
+                    "label": "Produto B",
+                    "url": "/produtos/b"
+                  },
+                  {
+                    "label": "Produto C",
+                    "url": "/produtos/c"
+                  }
+                ]
+              },
+              {
+                "title": "Suporte",
+                "links": [
+                  {
+                    "label": "FAQ",
+                    "url": "/suporte/faq"
+                  },
+                  {
+                    "label": "Contato",
+                    "url": "/contato"
+                  },
+                  {
+                    "label": "Documentação",
+                    "url": "/docs"
+                  }
+                ]
+              },
+              {
+                "title": "Empresa",
+                "links": [
+                  {
+                    "label": "Sobre nós",
+                    "url": "/sobre"
+                  },
+                  {
+                    "label": "Carreiras",
+                    "url": "/carreiras"
+                  },
+                  {
+                    "label": "Blog",
+                    "url": "/blog"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "socialMedia",
+          "position": "bottom",
+          "config": {
+            "icons": [
+              {
+                "platform": "facebook",
+                "url": "https://facebook.com/empresaexemplo"
+              },
+              {
+                "platform": "instagram",
+                "url": "https://instagram.com/empresaexemplo"
+              },
+              {
+                "platform": "linkedin",
+                "url": "https://linkedin.com/company/empresaexemplo"
+              },
+              {
+                "platform": "twitter",
+                "url": "https://twitter.com/empresaexemplo"
+              }
+            ]
+          }
+        },
+        {
+          "type": "copyright",
+          "position": "bottom",
+          "config": {
+            "text": "© 2025 Empresa Exemplo. Todos os direitos reservados."
+          }
+        }
+      ]
+    },
+    "sidebar": {
+      "visible": false,
+      "width": 280,
+      "components": []
+    },
+    "main": {
+      "components": [
+        {
+          "type": "hero",
+          "order": 1,
+          "config": {
+            "title": "Soluções inovadoras para seu negócio",
+            "subtitle": "Transformamos ideias em resultados",
+            "backgroundImage": "/assets/client-001/hero-bg.jpg",
+            "ctaButton": {
+              "text": "Saiba mais",
+              "url": "/solucoes",
+              "variant": "primary"
+            }
+          }
+        },
+        {
+          "type": "featuredProducts",
+          "order": 2,
+          "config": {
+            "title": "Produtos em destaque",
+            "columns": 3,
+            "showPrice": true,
+            "showRating": true,
+            "products": [
+              {
+                "id": "prod-001",
+                "featured": true
+              },
+              {
+                "id": "prod-005",
+                "featured": true
+              },
+              {
+                "id": "prod-008",
+                "featured": true
+              }
+            ]
+          }
+        },
+        {
+          "type": "testimonials",
+          "order": 3,
+          "config": {
+            "title": "O que nossos clientes dizem",
+            "autoplay": true,
+            "interval": 5000,
+            "items": [
+              {
+                "quote": "Excelente serviço e produtos de alta qualidade!",
+                "author": "Maria Silva",
+                "company": "Tech Solutions"
+              },
+              {
+                "quote": "Parceria que transformou nosso negócio.",
+                "author": "João Santos",
+                "company": "Inovação Digital"
+              },
+              {
+                "quote": "Atendimento excepcional e soluções personalizadas.",
+                "author": "Ana Oliveira",
+                "company": "Criativa S.A."
+              }
+            ]
+          }
+        },
+        {
+          "type": "contactForm",
+          "order": 4,
+          "config": {
+            "title": "Entre em contato",
+            "subtitle": "Estamos prontos para atender suas necessidades",
+            "fields": [
+              {
+                "name": "name",
+                "label": "Nome",
+                "type": "text",
+                "required": true
+              },
+              {
+                "name": "email",
+                "label": "E-mail",
+                "type": "email",
+                "required": true
+              },
+              {
+                "name": "phone",
+                "label": "Telefone",
+                "type": "tel",
+                "required": false
+              },
+              {
+                "name": "message",
+                "label": "Mensagem",
+                "type": "textarea",
+                "required": true
+              }
+            ],
+            "submitButton": {
+              "text": "Enviar mensagem",
+              "variant": "primary"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "features": {
+    "ecommerce": {
+      "enabled": true,
+      "currencySymbol": "R$",
+      "decimalSeparator": ",",
+      "thousandsSeparator": ".",
+      "productsPerPage": 12,
+      "showFilters": true,
+      "filters": [
+        {
+          "type": "category",
+          "label": "Categorias",
+          "multiselect": true
+        },
+        {
+          "type": "price",
+          "label": "Preço",
+          "range": true
+        },
+        {
+          "type": "rating",
+          "label": "Avaliação",
+          "stars": true
+        }
+      ],
+      "checkout": {
+        "steps": [
+          "cart",
+          "address",
+          "shipping",
+          "payment",
+          "confirmation"
+        ],
+        "paymentMethods": [
+          "credit-card",
+          "boleto",
+          "pix"
+        ],
+        "shippingMethods": [
+          "standard",
+          "express"
+        ]
+      }
+    },
+    "blog": {
+      "enabled": true,
+      "postsPerPage": 9,
+      "showAuthor": true,
+      "showDate": true,
+      "showCategories": true,
+      "showComments": true
+    },
+    "authentication": {
+      "enabled": true,
+      "methods": [
+        "email",
+        "google",
+        "facebook"
+      ],
+      "registration": {
+        "enabled": true,
+        "requireEmailConfirmation": true
+      }
+    },
+    "internationalization": {
+      "enabled": false,
+      "defaultLanguage": "pt-BR",
+      "availableLanguages": [
+        "pt-BR"
+      ]
+    }
+  },
+  "api": {
+    "endpoints": {
+      "products": "/api/client-001/products",
+      "categories": "/api/client-001/categories",
+      "cart": "/api/client-001/cart",
+      "user": "/api/client-001/user",
+      "orders": "/api/client-001/orders"
+    },
+    "cache": {
+      "ttl": 3600,
+      "staleWhileRevalidate": true
+    }
+  },
+  "integrations": {
+    "analytics": {
+      "googleAnalytics": {
+        "enabled": true,
+        "trackingId": "UA-XXXXXXXX-X"
+      },
+      "facebookPixel": {
+        "enabled": true,
+        "pixelId": "XXXXXXXXXX"
+      }
+    },
+    "marketing": {
+      "mailchimp": {
+        "enabled": true,
+        "listId": "abc123def456"
+      }
+    },
+    "chat": {
+      "enabled": true,
+      "provider": "zendesk",
+      "widgetKey": "XXXXXXXXXX"
+    }
+  }
+}
